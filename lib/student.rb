@@ -38,7 +38,7 @@ class Student
     SELECT * FROM students WHERE grade = 9
     SQL
 
-    DB[:conn]
+    DB[:conn].execute(sql)
   end
 
   def save
