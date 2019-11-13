@@ -79,7 +79,6 @@ class Student
 
     DB[:conn].execute(sql, grade).map(){|row|
       self.new_from_db(row)
-      binding.pry
     }
   end
 
