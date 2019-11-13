@@ -49,7 +49,7 @@ class Student
 
     DB[:conn].execute(sql).map{|row|
       row[1]
-      #binding.pry
+      binding.pry
     }
   end
 
