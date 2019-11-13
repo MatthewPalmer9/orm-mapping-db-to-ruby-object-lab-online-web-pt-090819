@@ -48,9 +48,9 @@ class Student
     SQL
 
     DB[:conn].execute(sql).map(){|row|
-      row.name
+      row
     }
-    #binding.pry 
+    #binding.pry
   end
 
   def save
