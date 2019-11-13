@@ -48,6 +48,7 @@ class Student
     SQL
 
     DB[:conn].execute(sql)
+    binding.pry 
   end
 
   def save
